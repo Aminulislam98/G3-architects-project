@@ -13,10 +13,10 @@
 
 /* -------------------------------------- */
 
-/* * {
+* {
   box-sizing: border-box;
   margin: 0;
-} */
+}
 
 #header {
   background-color: rgba(255, 144, 14, 0.1);
@@ -138,6 +138,62 @@
   border: none;
   margin-bottom: 50px;
 }
+/* This is some facts section */
+.some-facts-section {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: 130px auto;
+  gap: 100px;
+}
+.some-facts-header-container {
+  max-width: 542px;
+}
+.some-facts-header {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.some-facts-description {
+  font-size: 1rem;
+  line-height: 26px;
+  color: #424242;
+}
+
+.some-facts-achievement-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.some-facts-achievement-card {
+  width: 240px;
+  height: 240px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 10px;
+}
+.some-facts-achievement-container img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 10px;
+}
+.some-facts-achievement-card-header {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.some-facts-achievement-card-description {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #424242;
+}
+
+/* ---------This is media quarry------------------------------ */
 @media screen and (max-width: 576px) {
   .navbar {
     width: 100%;
@@ -163,10 +219,64 @@
   .banner-button {
     margin-bottom: 35px;
   }
+  /* .our-feature-content {
+    max-width: 537px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  } */
 
   .our-feature-header {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     margin-top: 20px;
+    text-align: center;
+  }
+  .our-feature-description {
+    text-align: center;
+  }
+  .our-feature-button {
+    margin: 0 auto;
+  }
+  .some-facts-achievement-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+  }
+  .some-facts-section {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    gap: 50px;
+  }
+  .some-facts-header-container {
+    max-width: 542px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .some-facts-description {
+    font-size: 1rem;
+    line-height: 26px;
+    color: #424242;
+    text-align: center;
+  }
+  .some-facts-achievement-card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ff900e;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 10px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 745px) {
