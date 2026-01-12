@@ -1,8 +1,181 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
 .open-sans-fonts {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* here are some color stoke */
+/* color: #424242; this is Dark 02 */
+/* header background color rgba(255, 144, 14, 0.1) */
+/* button background color #FF900E */
+
+/* -------------------------------------- */
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+} */
+
+#header {
+  background-color: rgba(255, 144, 14, 0.1);
+  max-width: 100%;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  font-size: 2.3rem;
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+.nav-items {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: #424242;
+}
+.banner-header-description {
+  max-width: 862px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.banner-header {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+.banner-description {
+  font-size: 1rem;
+  line-height: 26px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.banner-button {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 21px 24px;
+  background-color: #ff900e;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 50px;
+}
+.banner img {
+  width: 100%;
+}
+/* This is main section */
+#main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.our-feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+  gap: 73px;
+}
+.our-feature-images-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.our-feature-images-container img {
+  width: 100%;
+}
+.our-feature-content {
+  max-width: 537px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.our-feature-header {
+  font-size: 2.8rem;
+  margin-bottom: 24px;
+}
+#quick-list {
+  color: #424242;
+  font-weight: 600;
+}
+#of-our {
+  color: black;
+}
+#features {
+  color: #ff900e;
+}
+.our-feature-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #424242;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+.our-feature-button {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 21px 24px;
+  background-color: #ff900e;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 576px) {
+  .navbar {
+    width: 100%;
+  }
+  .our-feature {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    gap: 25px;
+  }
+  .brand {
+    font-size: 1.2rem;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-header {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .banner-button {
+    margin-bottom: 35px;
+  }
+
+  .our-feature-header {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 745px) {
+  .our-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    gap: 20px;
+  }
 }
