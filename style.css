@@ -6,12 +6,11 @@
   font-style: normal;
 }
 
-/* here are some color stoke */
+/* here   are some color stoke */
 /* color: #424242; this is Dark 02 */
 /* header background color rgba(255, 144, 14, 0.1) */
 /* button background color #FF900E */
-
-/* -------------------------------------- */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 * {
   box-sizing: border-box;
@@ -139,6 +138,77 @@
   border-radius: 8px;
   border: none;
   margin-bottom: 50px;
+}
+/* feature-love-enjoy-section */
+
+.feature-love-enjoy-section {
+  padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 560px 1fr;
+  column-gap: 146px;
+  margin-top: 130px;
+}
+.feature-love-enjoy-header {
+  border-left: 5px solid #ff900e;
+  padding-left: 21px;
+  font-size: 2.8rem;
+  font-size: bold;
+  margin-bottom: 24px;
+}
+.feature-love-enjoy-description {
+  color: #424242;
+  line-height: 26px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+.feature-love-enjoy-card {
+  padding: 30px;
+  margin-top: 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.074);
+}
+.feature-love-enjoy-card-header {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.feature-love-enjoy-card-description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #727272;
+}
+.architect-image-and-experience-container {
+  max-width: 100%;
+  border-radius: 8px;
+  background-color: #ff900e;
+  color: white;
+}
+
+.architect-image-container {
+  position: absolute;
+}
+.architect-experience-container {
+  position: relative;
+  background-color: #ff900e;
+  color: white;
+  bottom: -860px;
+  left: -92px;
+  padding: 35px;
+  width: 300px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.architect-experience-header {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.architect-experience-description {
+  font-size: 1.2rem;
 }
 /* This is some facts section */
 .some-facts-section {
