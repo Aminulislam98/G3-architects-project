@@ -16,6 +16,20 @@
   box-sizing: border-box;
   margin: 0;
 }
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+body {
+  scrollbar-width: none;
+}
+
+/* IE / old Edge */
+body {
+  -ms-overflow-style: none;
+}
 
 #header {
   background-color: rgba(255, 144, 14, 0.1);
@@ -25,14 +39,18 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px 20px;
 }
 .brand {
   font-size: 2.3rem;
 }
 .navbar,
 .banner {
-  max-width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.banner {
+  padding: 0;
   margin: 0 auto;
 }
 .nav-links {
@@ -86,11 +104,10 @@
 .our-feature {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 85px;
-  gap: 73px;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 .our-feature-images-container {
   display: grid;
@@ -142,13 +159,16 @@
 /* feature-love-enjoy-section */
 
 .feature-love-enjoy-section {
-  padding: 0 20px;
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 560px 1fr;
-  column-gap: 146px;
+  display: flex;
+  flex-direction: row;
+  gap: 140px;
   margin-top: 130px;
+  padding: 0 20px;
+}
+.feature-love-enjoy-container {
+  max-width: 586px;
 }
 .feature-love-enjoy-header {
   border-left: 5px solid #ff900e;
@@ -179,36 +199,40 @@
   color: #727272;
 }
 .architect-image-and-experience-container {
-  max-width: 100%;
+  max-width: 708px;
   border-radius: 8px;
-  background-color: #ff900e;
   color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: top;
+  display: flex;
+  flex-direction: column;
+}
+.architect-image {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
 }
 
-.architect-image-container {
-  position: absolute;
-}
-.architect-experience-container {
-  position: relative;
+.years-container {
   background-color: #ff900e;
-  color: white;
-  bottom: -860px;
-  left: -92px;
-  padding: 35px;
-  width: 300px;
-  height: 170px;
+  width: 280px;
+  height: 180px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  margin-left: -92px;
+  margin-top: -100px;
 }
-.architect-experience-header {
+.years-header {
   font-size: 3rem;
-  font-weight: bolder;
 }
-.architect-experience-description {
-  font-size: 1.2rem;
+.years-description {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 500;
 }
 /* This is some facts section */
 .some-facts-section {
@@ -270,7 +294,7 @@
 .our-sponsors-section {
   max-width: 1440px;
   margin: 180px auto;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 .our-sponsors-header-container {
   width: 542px;
@@ -479,6 +503,25 @@
     width: 100%;
     text-align: center;
   }
+  .feature-love-enjoy-section {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 70px;
+    padding: 0 20px;
+  }
+  .architect-image-and-experience-container {
+    width: 100%;
+  }
+  .years-container {
+    width: 100%;
+    height: 130px;
+    margin-left: 0;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 745px) {
   .our-feature {
@@ -567,12 +610,66 @@
   }
 }
 @media screen and (min-width: 745px) and (max-width: 1250px) {
+  .our-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 85px;
+    padding: 0 20px;
+  }
+  .our-feature-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .our-feature-button {
+    margin-bottom: 10px;
+  }
+
+  .feature-love-enjoy-section {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 60px;
+  }
+  .feature-love-enjoy-container {
+    max-width: 100%;
+  }
+  .architect-image-and-experience-container {
+    max-width: 100%;
+  }
+  .architect-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .years-container {
+    background-color: #ff900e;
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 20px;
+  }
   .some-facts-section {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     margin: 60px auto;
-    gap: 50px;
+    gap: 30px;
   }
   .some-facts-header-container {
     max-width: 542px;
@@ -587,19 +684,21 @@
   }
   .some-facts-achievement-container {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
   }
   .some-facts-achievement-card {
     margin: 0 auto;
   }
   .Sponsors-image-container {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 0;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    gap: 10px;
   }
   .our-sponsors-section {
     max-width: 100%;
@@ -629,6 +728,14 @@
     margin-bottom: 50px;
     justify-content: space-between;
     align-items: center;
+  }
+  .feature-love-enjoy-section {
+    padding: 0 30px;
+    max-width: 100%;
+    column-gap: 0;
+  }
+  .architect-image-container img {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1250px) and (max-width: 1440px) {
@@ -663,16 +770,32 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    padding: 0 20px;
   }
   .navbar {
-    padding: 10px 60px;
+    padding: 30px 40px;
     margin-bottom: 50px;
     justify-content: space-between;
     align-items: center;
+  }
+  .banner {
+    padding: 0 30px;
   }
   .nav-link {
     text-decoration: none;
     color: #424242;
     font-size: 1.5rem;
+  }
+  .feature-love-enjoy-section {
+    padding: 0 30px;
+    max-width: 100%;
+  }
+  .our-feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 85px;
+    padding: 0 30px;
   }
 }
