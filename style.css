@@ -16,20 +16,6 @@
   box-sizing: border-box;
   margin: 0;
 }
-/* Chrome, Edge, Safari */
-body::-webkit-scrollbar {
-  display: none;
-}
-
-/* Firefox */
-body {
-  scrollbar-width: none;
-}
-
-/* IE / old Edge */
-body {
-  -ms-overflow-style: none;
-}
 
 #header {
   background-color: rgba(255, 144, 14, 0.1);
